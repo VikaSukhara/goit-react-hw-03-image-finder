@@ -3,6 +3,7 @@ export const ImageGalleryItem = ({
   largePhoto,
   id,
   smallImg,
+  tags
 }) => {
   return (
     <li
@@ -10,7 +11,7 @@ export const ImageGalleryItem = ({
       className="ImageGalleryItem"
       onClick={() => largePhotoFunction(largePhoto)}
     >
-      <img src={smallImg} alt="photo" className="ImageGalleryItem-image" />
+      <img src={smallImg} alt={tags} className="ImageGalleryItem-image" />
     </li>
   );
 };

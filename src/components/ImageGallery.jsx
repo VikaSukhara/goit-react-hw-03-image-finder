@@ -10,6 +10,7 @@ export const ImageGallery = ({ photos, largePhotoFunction }) => {
             id={photo.id}
             smallImg={photo.webformatURL}
             largePhoto={photo.largeImageURL}
+            tag={photo.tags}
           />
         );
       })}
